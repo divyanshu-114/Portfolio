@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #333;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #f0f4f8, #d9e8f5);
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #282c34;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 5px;
+}
+
+header nav ul li a:hover {
+    background-color: #00bcd4;
+    color: #fff;
+}
+
+#hero {
+    padding: 4rem 1rem;
+    text-align: center;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: #fff;
+    animation: fadeIn 2s ease-in;
+}
+
+#hero h2 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+section {
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+section#about {
+    background: #e0f7fa;
+    padding: 3rem 1rem;
+}
+
+section#projects {
+    background: #ffffff;
+}
+
+section#projects .project {
+    margin: 1.5rem auto;
+    padding: 1rem;
+    max-width: 600px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section#projects .project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact ul li {
+    margin-bottom: 1rem;
+}
+
+#contact ul li a {
+    color: #0072ff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#contact ul li a:hover {
+    color: #0056b3;
+}
+
+footer {
+    background: #282c34;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
